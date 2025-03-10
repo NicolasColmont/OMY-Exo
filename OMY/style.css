@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #53a8b6;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Mise en page globale du header pour mettre le logo en haut à gauche et le texte en bas à gauche*/
+}
+
+header ul{
+    list-style: none;
+}
+
+.img_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.bouton_nav{
+    display:inline-block;
+    padding: 5px 10px;
+    background-color: darkmagenta;
+    color: #79c2d0;
+    text-decoration: none;
+    border-radius: 5px;
+    /* Création des boutons de navigation.*/
+}
+
+.nav{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap : 2rem;
+    margin-right: 10px;
+    position:absolute;
+    right: 1rem;
+    top: 1rem;
+    /* Mettre dans le coin supérieur droit du header le boutons de navigation*/
+}
+
+.bouton_nav:hover{
+    box-shadow: 5px 3px 15px darkmagenta;
+    /* Feedback sur le fait que les boutons sont surlignés*/
+}
+
+.Logo_texte{
+    position: relative;
+    bottom: 20px;
+/* Alignement du texte par rapport à l'image */
+}
+
+
+main{
+    background-color: #5585b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+/* Mise en page du corps principal de la page pour que les différents conteneurs prennent tout l'espace*/
+}
+
+.Conteneur {
+    width: 275px;
+    height: 475px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #53a8b6;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+/*Création et mise en page des conteneurs*/
+}
+
+.Conteneur:hover img {
+    display: none;
+/* Faire disparaître les images quand on hover les conteneurs.*/
+}
+
+main img {
+    width: 275px;
+    height: 475px;
+    border-radius: 10%;
+    position:absolute;
+/* Redimension des images et s'assurer qu'elles couvrent entièreté du conteneur*/
+}
+
+main dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.description{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    text-align: justify;
+}
+
+main button{
+    display:inline-block;
+    height: 50px;
+    width: 100px;
+    padding: 5px 10px;
+    background-color: darkmagenta;
+    color: #79c2d0;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px;
+    /* Création des boutons pour chaque fiche.*/
+}
+
+footer{
+    background-color: #53a8b6;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer img {
+    height: 25px;
+    width: 25px;
+}
